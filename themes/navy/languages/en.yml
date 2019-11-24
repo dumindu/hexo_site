@@ -1,20 +1,14 @@
 menu:
   docs: Docs
-  api: API
-  news: News
-  plugins: Plugins
-  themes: Themes
-  about: About
+  labs: Labs
   search: Search
 
 index:
   get_started: Get started
-  theme_intro: Choose from a huge library of spectacular, feature-packed and customizable themes. Create your own using any compatible template engines.
-  theme_link: Explore themes
 
 page:
-  contents: Contents
-  back_to_top: Back to Top
+  contents: What's on this Page
+  back_to_top: Back to Top ⇡
   improve: Improve this doc
   prev: Prev
   next: Next
@@ -22,54 +16,45 @@ page:
 
 sidebar:
   docs:
-    getting_started: Getting Started
+    docs: Documentation
     overview: Overview
-    setup: Setup
-    configuration: Configuration
-    commands: Commands
-    migration: Migration
-    basic_usage: Basic Usage
-    writing: Writing
-    front_matter: Front-matter
-    tag_plugins: Tag Plugins
-    asset_folders: Asset Folders
-    data_files: Data Files
-    server: Server
-    generating: Generating
-    deployment: Deployment
-    github_pages: GitHub Pages
-    gitlab_pages: GitLab Pages
-    one_command_deployment: One-Command Deployment
-    customization: Customization
-    permalinks: Permalinks
-    themes: Themes
-    structure: Structure
-    templates: Templates
-    variables: Variables
-    helpers: Helpers
-    internationalization: Internationalization (i18n)
-    plugins: Plugins
-    miscellaneous: Miscellaneous
-    troubleshooting: Troubleshooting
-    contributing: Contributing
-  api:
-    core: Core
+    basics: Basics
+    beyond_the_basics: Beyond The Basics
+    the_tough_part: The Tough Part
+    lets_get_it_started: Let's Get It Started
+    error_handling: Error Handling
+    why_rust: Why Rust?
+    installation: Installation
+    hello_world: Hello World
+    cargo,crates_and_basic_project_structure: Cargo, Crates and Basic Project Structure
+    comments_and_documenting_the_code: Comments and Documenting the code
+    variable_bindings,constants_and_statics: Variable bindings, Constants and Statics
+    functions: Functions
+    primitive_data_types: Primitive Data Types
+    operators: Operators
+    control_flows: Control Flows
+    vectors: Vectors
+    structs: Structs
+    enums: Enums
+    generics: Generics
+    impls_and_traits: Impls and Traits
+    ownership: Ownership
+    borrowing: Borrowing
+    lifetimes: Lifetimes
+    code_organization: Code Organization
+    functions_co: Functions
+    modules: Modules
+    crates: Crates
+    workspaces: Workspaces
+    use: Use
+    std_primitives_and_preludes: STD, Primitives and Preludes
+    smart_compiler: Smart Compiler
+    panicking: Panicking
+    option_and_result: Option and Result
+    unwrap_and_expect: Unwrap and Expect
+    error_and_none_propagation: Error and None Propagation
+    combinators: Combinators
+    custom_error_types: Custom Error Types
+  labs:
+    labs: Laboratory
     overview: Overview
-    events: Events
-    locals: Locals
-    router: Router
-    box: Box
-    rendering: Rendering
-    posts: Posts
-    scaffolds: Scaffolds
-    themes: Themes
-    extensions: Extensions
-    console: Console
-    deployer: Deployer
-    filter: Filter
-    generator: Generator
-    helper: Helper
-    migrator: Migrator
-    processor: Processor
-    renderer: Renderer
-    tag: Tag

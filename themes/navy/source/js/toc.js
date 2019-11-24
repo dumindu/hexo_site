@@ -8,9 +8,6 @@
 
   if (!toc) return;
 
-  var footerHeight = document.getElementById('footer').clientHeight;
-  document.getElementById('article-toc-inner').style['margin-bottom'] = footerHeight + 'px';
-
   function updateSidebarPosition() {
     var scrollTop = document.scrollingElement.scrollTop;
 

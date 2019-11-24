@@ -1,9 +1,6 @@
 <!-- GitHub star -->
-<a href="https://github.com/hexojs/hexo" target="_blank" aria-label="Star hexojs/hexo on GitHub"><img src="https://img.shields.io/github/stars/hexojs/hexo?style=social" alt="Star"></a>
+<a class="github-button" href="https://github.com/learning-rust/site" data-icon="octicon-star" data-show-count="true" aria-label="Star learning-rust/learning-rust.github.io on GitHub">Star</a>
 <!-- GitHub fork -->
-<a href="https://github.com/hexojs/hexo" target="_blank" aria-label="Fork hexojs/hexo on GitHub"><img src="https://img.shields.io/github/forks/hexojs/hexo?style=social" alt="Fork"></a>
-<!-- NPM Download -->
-<a href="https://www.npmjs.com/package/hexo" target="_blank" aria-label="Hexo on NPM"><img src ="https://img.shields.io/npm/dm/hexo?logo=npm&style=social" alt="NPM Downloads"></a>
-<!-- Twitter follow button -->
-<a href="https://twitter.com/hexojs" target="_blank" aria-label="Follow Hexo on Twiitter"><img src="https://img.shields.io/twitter/follow/hexojs?style=social" alt="Follow @hexojs"></a>
-
+<a class="github-button" href="https://github.com/learning-rust/site/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork learning-rust/site on GitHub">Fork</a>
+<!-- Github Button -->
+<script async defer src="https://buttons.github.io/buttons.js"></script>

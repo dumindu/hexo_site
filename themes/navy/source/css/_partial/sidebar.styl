@@ -13,7 +13,7 @@
   padding: 10px 0
   font-family: font-title
   font-weight: bold
-  color: color-link
+  color: lighten(color-default, 10%)
   display: inline-block
   border-top: 1px solid color-border
   line-height: 1
@@ -27,7 +27,14 @@
   line-height: 1
   position: relative
   width: 100%
+  text-overflow: ellipsis
+  overflow: hidden
+  white-space: nowrap
   &.current
     color: color-link
+    position: relative
+    left: -24px
+  &.current:before
+    content: "👉 "
   &:hover
     color: color-link-hover

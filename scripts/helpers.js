@@ -95,7 +95,7 @@ hexo.extend.helper.register('url_for_lang', function(path) {
   return url;
 });
 
-hexo.extend.helper.register('raw_link', (path) => `https://github.com/hexojs/site/edit/master/source/${path}`);
+hexo.extend.helper.register('raw_link', (path) => `https://github.com/learning-rust/site/edit/master/source/${path}`);
 
 hexo.extend.helper.register('page_anchor', function(str) {
   const $ = cheerio.load(str, {decodeEntities: false});
@@ -141,7 +141,7 @@ hexo.extend.helper.register('lunr_index', function(data) {
 hexo.extend.helper.register('canonical_path_for_nav', function() {
   const path = this.page.canonical_path;
 
-  if (path.startsWith('docs/') || path.startsWith('api/')) return path;
+  if (path.startsWith('docs/')) return path;
   return '';
 });
 
@@ -149,15 +149,3 @@ hexo.extend.helper.register('lang_name', function(lang) {
   const data = this.site.data.languages[lang];
   return data.name || data;
 });
-
-hexo.extend.helper.register('disqus_lang', function() {
-  const lang = this.page.lang;
-  const data = this.site.data.languages[lang];
-
-  return data.disqus_lang || lang;
-});
-
-hexo.extend.helper.register('hexo_version', function() {
-  return this.env.version;
-});
-

@@ -1,13 +1,15 @@
-<footer id="footer" class="wrapper">
-  <div class="inner">
-    <div id="footer-copyright">
-      &copy; {{ moment(Date.now()).year() }} <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">{{ config.author }}</a><br>
-      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+<div id="footer-outer">
+  <footer id="footer" class="wrapper">
+    <div class="inner">
+      <div id="footer-copyright">
+        &copy; {{ moment(Date.now()).year() }} <a href="https://github.com/dumindu" target="_blank">{{ config.author }}</a><br>
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> &amp; <a href="https://github.com/hexojs/site/tree/master/themes/navy" target="_blank">Navy</a> theme.
+      </div>
+      <div id="footer-links">
+        <a class="footer-link" href="https://www.buymeacoffee.com/dumindu" target="_blank">
+          <img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" >
+        </a>
+      </div>
     </div>
-    <div id="footer-links">
-      <a href="https://www.netlify.com/" class="footer-link" target="_blank"><img src="https://www.netlify.com/img/global/badges/netlify-dark.svg" style="margin-bottom:-14px"/></a>
-      <a href="https://twitter.com/{{ config.twitter }}" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="https://github.com/{{ config.github }}" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
-    </div>
-  </div>
-</footer>
+  </footer>
+</div>
