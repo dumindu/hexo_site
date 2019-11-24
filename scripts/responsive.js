@@ -48,43 +48,6 @@ async function responsive() {
       });
     });
   }));
-
-  return Promise.all(['themes/index.html'].map((path) => {
-    return new Promise((resolve, reject) => {
-      const assetPath = route.get(path);
-      const assetData = [];
-      assetPath.on('data', (chunk) => assetData.push(chunk));
-      assetPath.on('end', async() => {
-        if (assetData.length) {
-          try {
-            const result = assetData.join('').replace(/<img (src|data-src)=['"](.*?)['"](.*?)>/gi, (imgTag, attr, value, alt) => {
-              if (Object.prototype.hasOwnProperty.call(updatePng, value)) {
-                const jpg = updatePng[value].jpg;
-
-                imgTag = imgTag.replace(value, jpg);
-
-                if (attr === 'data-src' && alt.length > 0) {
-                  const png = value;
-                  const jpg2x = updatePng[value].jpg2x;
-
-                  imgTag = imgTag.replace(alt, (postAlt) => {
-                    postAlt += ` data-srcset="${jpg}, ${jpg2x} 2x" data-org="${png}"`;
-                    return postAlt;
-                  });
-                }
-              }
-
-              return imgTag;
-            });
-
-            resolve(route.set(path, result));
-          } catch (err) {
-            reject(err);
-          }
-        }
-      });
-    });
-  }));
 }
 
 hexo.extend.filter.register('after_generate', responsive);
