@@ -17,9 +17,6 @@ deploy:
 highlight:
   enable: false
 
-hljs:
-  enable: true
-
 google_analytics: UA-XXXXXXXXX-1
 algolia:
   en:
