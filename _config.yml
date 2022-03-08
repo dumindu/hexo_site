@@ -5,14 +5,14 @@ author: Dumindu Madunuwan
 language: en
 timezone: UTC
 
-url: https://learning-rust.github.io
+url: https://org.github.io
 root: /
 
 theme: navy
 
 deploy:
   type: git
-  repo: git@github.com:learning-rust/learning-rust.github.io.git
+  repo: git@github.com:org/org.github.io.git
 
 highlight:
   enable: false
@@ -20,9 +20,9 @@ highlight:
 hljs:
   enable: true
 
-google_analytics: UA-111784617-1
+google_analytics: UA-XXXXXXXXX-1
 algolia:
   en:
-    api_key: 219b278e94416804a2d4bb47b3bf3d0b
-    index_name: learning_rust
-github: learning-rust/site
+    api_key: xxxxxx
+    index_name: xxxxxx
+github: org/site
